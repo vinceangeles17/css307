@@ -1,0 +1,172 @@
+html {
+    scroll-behavior: smooth;
+  }
+ 
+.logo {
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: auto;
+}
+body {background-color: beige;}
+.site-title-container{
+ display: flex;
+ align-items: center;
+}
+.site-title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    position: sticky;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+    z-index: 9999; 
+    position: sticky;
+    top: 0;
+}   
+
+.menu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    
+}
+
+.Hire-me {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+    position:relative;
+}
+
+.hero-left{
+    width: 40%;
+    position: relative;   
+    top: 0; 
+    left: 0; 
+   
+}
+.hero {position: relative;
+top: 0;
+left: 0;}
+.small-logo {
+    border-radius: 50%;
+    max-width: 70px;
+    max-height: 70px;
+    position: absolute;
+    left: -55px;
+    top: 150px;
+}
+.hero-right{width: 60%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.button{padding: 20px 30px;}
+.resume-btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 25px;
+    padding: 20px 30px;
+}
+.cntct-btn {
+    font-size: 25px;
+    background-color: white;
+    padding: 20px 30px;
+}
+
+.small-text {
+    margin-top: 10px;
+    opacity: 0.3;
+    font-size: smaller;
+}
+.hero-head {font-size: 100px;
+    background-color: red;
+    animation-name: herohead;
+    animation-duration: 8s;
+    transition: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes herohead {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+.hero-text  {font-size: 50px;}
+
+.About{position: relative;
+height: 600px;}
+
+.Aboutme{
+    background-image: url("Aboutmebg.jpg");
+    position:absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 150%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px
+}
+
+.abouthead, .ametxt{
+    font-size: 100px;
+    animation: ahead;
+    animation-duration: 8s;
+    transition: ease-in-out;
+}
+
+@keyframes ahead {
+    0%{
+        transform: scale(0.0);
+      }
+      60%{
+        transform: scale(2);
+      }
+      100%{
+        transform: scale(1.5);
+      }
+}
+
+
+.aboutstuff {  display: flex;
+    align-items: center;
+    padding: 20px 100px;
+    position:relative;
+}
+
+.aboutright{ 
+    left: 1555px;
+    top: 550px;
+    animation-name: aboutright;
+    animation-duration: 8s;
+    transition: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes aboutright{
+    0%{
+      opacity: 1;
+    }
+     50%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
